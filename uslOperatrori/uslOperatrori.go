@@ -1,8 +1,8 @@
-package conditionalConstructions
+package uslOperatrori
 
 import "fmt"
 
-func ConditionalConstructions() {
+func IfElseSwitch() {
 
 	a := 2
 	b := 2

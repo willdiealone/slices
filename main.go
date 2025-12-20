@@ -2,12 +2,13 @@ package main
 
 import (
 	"Proj/cycles"
-	//"Proj/uslOperatrori"
+	//"Proj/uslOpewrator"
 )
 
 func main() {
 
-	//uslOperatrori.IfElseSwitch()
-	cycles.Cycles()
-
+	//uslOperator.IfElseSwitch()
+	//cycles.Cycles()
+	//cycles.SumNegativeNumbersBreak()
+	cycles.MultiplicationTable()
 }
