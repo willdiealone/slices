@@ -1,6 +1,13 @@
 package main
 
+import (
+	"Proj/cycles"
+	//"Proj/uslOperatrori"
+)
+
 func main() {
-	conditionalConstructions()
-	cycles()
+
+	//uslOperatrori.IfElseSwitch()
+	cycles.Cycles()
+
 }

@@ -1,8 +1,8 @@
-package main
+package conditionalConstructions
 
 import "fmt"
 
-func conditionalConstructions() {
+func ConditionalConstructions() {
 
 	a := 2
 	b := 2
