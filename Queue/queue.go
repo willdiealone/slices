@@ -2,6 +2,7 @@ package queue
 
 import (
 	"errors"
+	"fmt"
 )
 
 type CircularQueue struct {
@@ -29,7 +30,7 @@ func (q *CircularQueue) Push(i int) error {
 	if q.Full() {
 		return errors.New("queue is full")
 	}
-	// Инициализируем Front если был -1
+	// Инициализируем front если массив пустой
 	if q.front == -1 {
 		q.front = 0
 	}
@@ -51,6 +52,7 @@ func (q *CircularQueue) Pop() error {
 		q.front = -1
 		q.rear = -1
 	} else {
+		q.values[q.front] = 0
 		q.front = (q.front + 1) % q.size
 	}
 	return nil
@@ -77,4 +79,8 @@ func (q *CircularQueue) Full() bool {
 		return true
 	}
 	return false
+}
+
+func (q *CircularQueue) PrintQueue() {
+	fmt.Println(q.values)
 }
